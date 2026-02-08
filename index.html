@@ -24,35 +24,7 @@
     "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
   }
 }
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-<body class="bg-gray-50 text-gray-900">
-    <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
-    <!-- Firebase App (Core) -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com";
-  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com";
 
-  // Aapki Firebase Config (Firebase Console se copy karen)
-  const firebaseConfig = {
-    apiKey: "AIzaSyA1Q3omWP7YXAaRlPQBJXwMx8iNoapPHTg",
-    authDomain: "your-app.firebaseapp.com",
-    databaseURL: "https://your-app-default-rtdb.firebaseio.com",
-    projectId: "your-app-id",
-    storageBucket: "your-app.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "1:12345:web:abcde"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-
-  // Ab yahan se aap data save ya read kar sakte hain
-  window.db = db; // Isay global banaye take dosre functions use kar sakein
-</script>
 
 </body>
 </html>
